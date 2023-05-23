@@ -13,6 +13,4 @@ console.log(result);
 
 
 
-function decodeStr(str){
-    
-}
+
