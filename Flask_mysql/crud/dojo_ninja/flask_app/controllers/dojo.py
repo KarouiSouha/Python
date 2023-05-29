@@ -1,7 +1,9 @@
 from flask_app import app
 from flask import render_template,session,request,redirect
 from flask_app.models.dojos import DOJO
-@app.route('/create_ninja',methods=['POST'])
+
+
+@app.route('/create_ninja',methods=["POST"])
 def add_dojo():
     DOJO.create_dojo(request.form)
     return redirect('/dojo')

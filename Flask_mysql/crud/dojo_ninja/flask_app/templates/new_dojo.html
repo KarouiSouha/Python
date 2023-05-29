@@ -21,9 +21,9 @@
         </div>
         <div>
             <h1>All Dojos</h1>
-            {{%for dojo in dojos%}}
+            {{% for dojo in all_dojo %}}
             <a href="/dojo/{{dojo.id}}">{{dojo.name}}</a>
-            {%endfor%}
+            {% endfor %}
             <a href="/ninjas">Add Ninja</a>
         </div>
         
