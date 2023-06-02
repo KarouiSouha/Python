@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <h1>Add a party</h1>
+    <a href="/dashboard">Home</a>
+    </div>
+    <form action="/add_party" method="post">
+        <div>
+        <label for="what">What:</label>
+        <input type="text" name="what">
+        <br>
+        <label for="where">Where</label>
+        <input type="text" name="location">
+        <br>
+        <label for="date">Date</label>
+        <input type="date" name="date">
+        <br>
+        <label for="all_ages">All Ages</label>
+        <input type="radio" name="all_ages" value=1 id="true">
+        <br>
+       <label for="true">True</label>
+       <input type="radio" name="all_ages" value=0 id="false">
+       <br>
+      
+    </div>
+    <div>
+        <label for="description">Description</label>
+        <br>
+        <textarea name="description"></textarea>
+    </div>
+    <input type="hidden" name="user_id" value="{{session.user_id}}">
+    <label for="false">False</label>
+    <input type="submit" value="Add Party">
+</form>
+</body>
+</html>
