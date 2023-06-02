@@ -14,7 +14,7 @@ def process():
 
 @app.route('/result')
 def create_user():
-  
+    
   return render_template("display.html",name=session['name_proccess'],location=session['Language_process']
                          ,Language=session['Language_process'],comment=session['comment_process'])
 
